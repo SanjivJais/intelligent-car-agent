@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#scene{
+    background-image: url(City\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 70vh;
+}
+
+#road{
+    background-image: url(track.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+#car{
+    height: 75px;
+    width: auto;
+    position: relative;
+    left: 0.8rem;
+}
+
+#checkpoint{
+    position: relative;
+    left: 60rem;
+    height: 30vh;
+    width: auto;
+}
+
+.tLight{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 60%;
+    left: 90%;
+    margin: 0.8rem 0;
+    border: 3px solid black;
+}
+
+/* #redLight{
+    background-color: rgb(255, 176, 176);
+} */
+#greenLight{
+    background-color: rgb(0, 255, 76);
+}
+
