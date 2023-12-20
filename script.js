@@ -19,7 +19,7 @@ function trafficLight() {
 
 }
 
-var pos = 0.2;
+var pos = -1.2;
 setInterval(drive, 15);
 function drive() {
     if (pos < 59.8 || pos > 60.2) {
