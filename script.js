@@ -3,7 +3,6 @@ const green = document.getElementById('greenLight');
 const red = document.getElementById('redLight');
 
 var flag = 1;
-var checkpoint = 0;
 setInterval(trafficLight, 4500);
 function trafficLight() {
     let random = (Math.random().toFixed(2)) * 100;
@@ -20,22 +19,19 @@ function trafficLight() {
 
 }
 
-var pos = 0.8;
-setInterval(drive, 20);
+var pos = 0.2;
+setInterval(drive, 15);
 function drive() {
-    if (pos <= 60) {
+    if (pos < 59.8 || pos > 60.2) {
         pos += 0.2;
         car.style.left = `${pos}rem`;
+        if (pos >= 95)
+            pos = 0.2;
     }
     else {
         if (flag == 1) {
-            if (pos <= 95) {
-                pos += 0.2;
-                car.style.left = `${pos}rem`;
-                checkpoint = 1;
-            } else {
-                pos = 0.8;
-            }
+            pos += 0.2;
+            car.style.left = `${pos}rem`;
         }
     }
 }
